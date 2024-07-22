@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.active {
+  color: black;
+  position: relative;
+  font-weight: 400;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 55px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-on .header-container {
+  max-width: 1830px;
+  margin: 0 auto;
+}
+.header-on .header-container .logo {
+  padding: 10px 0;
+}
+.header-on .header-container .header-end img {
+  padding: 8px 0;
+}
+.header-on .header-container .header-end a {
+  font-weight: 300;
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 15px;
+  line-height: 19.36px;
+}
+
+.header-under .header-container {
+  padding-top: 16px;
+}
+.header-under .header-container a {
+  padding-left: 25px;
+  font-size: 20px;
+  line-height: 24.2px;
+}
+
+.product .product-container .item-left {
+  padding: 58px 0 0 65px;
+}
+.product .product-container .item-right {
+  padding: 67px 0 0 127px;
+}
+.product .product-container .item-right h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+  display: inline;
+}
+.product .product-container .item-right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  width: 503px;
+  height: 90px;
+}
+.product .product-container .item-right h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ED90E;
+}
+.product .product-container .item-right .size p {
+  display: inline;
+  padding: 10px 10px;
+  margin-right: 15px;
+  background: #cccccc;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+.product .product-container .item-right .price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #FC0303;
+  width: 113px;
+  height: 47px;
+}
+.product .product-container .item-right .soLuong button {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(90deg, rgb(97, 129, 243) 100%, rgb(124, 151, 245) 100%);
+  padding: 0px 15px;
+}
+.product .product-container .item-right .soLuong .number {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  padding-top: 5px;
+  width: 14px;
+  height: 36px;
+  margin: 0 15px;
+}
+.product .product-container .item-right .button {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, rgb(208, 23, 238) 25%, rgb(62, 32, 248) 100%);
+  padding: 10px 20px;
+  border: none;
+}/*# sourceMappingURL=index.css.map */

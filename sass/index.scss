@@ -1,0 +1,96 @@
+@import './variable/variable.scss';
+@import './base/base.scss';
+
+//Header-on
+.header-on {
+    .header-container {
+        max-width: 1830px;
+        margin: 0 auto;
+
+        .logo {
+            padding:10px 0;
+        }
+
+        .header-end {
+            img {
+                padding:8px 0;
+            }
+            a {
+                font-weight: $fw-300;
+                font-size: $px-1;
+                display: inline-block;
+                padding-top: 15px;
+                line-height: 19.36px;
+            }
+        }
+    }
+}
+
+//Header-under
+.header-under {
+    .header-container {
+        padding-top: $px-1;
+
+        a {
+            padding-left: $px-5-half;
+            font-size: $px-3;
+            line-height: 24.2px;
+        }
+    }
+}
+
+//Carousel
+.product{
+    .product-container{
+        .item-left{
+            padding: 58px 0 0 65px;
+            img{}
+        }
+        .item-right{
+            padding: 67px 0 0 127px;
+            h1{
+                @include mText($px-8,$fw-300,$cl-black);
+                display: inline;
+            }
+            p{
+                @include mText($px-1,$fw-400,$cl-black);
+                width: 503px;
+                height: 90px;
+            }
+            h3{
+                @include mText($px-5,$fw-500,$cl-green-100)
+            }
+            .size{
+                p{
+                    display: inline;
+                    padding:$p;
+                    margin-right:$me;
+                    background: $cl-gray;
+                    @include mText($px-5,$fw-600,black)
+                }
+            }
+            .price{
+                @include mText($px-8,$fw-600,$cl-red);
+                width:113px;
+                height: 47px;
+            }
+            .soLuong{
+                button{
+                    @include mText($px-8,$fw-400,$cl-white);
+                    background:$bg-linear1;
+                    padding: $p1;
+                }
+                .number{
+                    @include mText($px-8,$fw-400,$cl-black);
+                    padding-top: 5px;
+                    width: 14px;
+                    height: 36px;
+                    margin: 0 15px;
+                }
+            }
+            .button{
+                @include mButton($px-5,$fw-500,$cl-white,$bg-linear,10px 20px,none);
+            }
+        }
+    }
+}
