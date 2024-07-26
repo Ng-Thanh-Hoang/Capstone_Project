@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captone</title>
+    <!--font chữ-->
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!--link build từ scss-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/register.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/image 3.png" alt="logo">
+                </a>
+            </div>
+            <div class="login">
+                <a href="">
+                    <img src="./img/image 8.png" alt="cart">
+                </a>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="nav">
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Woman</a>
+            <a href="#">Kid</a>
+            <a href="#">Sport</a>
+        </div>
+    </nav>
+<!--register-->
+<main class="register">
+    <div class="container">
+        <form id="frmSignUp">
+            <h1 class="title">Register</h1>
+
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control private" placeholder="email" aria-label="First name" id="email">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control private" placeholder="name" aria-label="Last name" id="name">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control private" placeholder="password" aria-label="First name" id="password">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control private" placeholder="phone" aria-label="Last name" id="phone">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control private" placeholder="password confirm" aria-label="First name" id="passwordConfirm">
+                </div>
+                <div class="col">
+                    <div class="gender">
+                        <label class="title" for="gender">Gender</label>
+                        <input class="form-check-input private" type="radio" name="flexRadioDefault" id="gender" value="true">
+                        <label class="title" for="gender">Male</label>
+                        <input class="form-check-input private" type="radio" name="flexRadioDefault" id="gender" value="false">
+                        <label class="title" for="gender">Female</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button class="sub">Submit</button>
+                </div>
+            </div>
+        </form>
+</main>
+
+    <!--footer-->
+    <main class="footer1">
+        <div class="container">
+            <div class="div1">
+                <div class="help">
+                    <h1 class="title">
+                        GET HELP
+                    </h1>
+                    <a href="#">Contact us</a>
+                    <a href="#">Shopping</a>
+                    <a href="#">NIKEiD</a>
+                    <a href="#">Nike+</a>
+                </div>
+                <div class="oders">
+                    <h1 class="title">ODERS</h1>
+                    <a href="#">Payment options</a>
+                    <a href="#">Shipping and delivery</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="register">
+                    <h1 class="title">REGISTER</h1>
+                    <h2 class="desc">Create o ne account to manage everything you do with Nike, from your shopping
+                        preferences to your Nike+ activity</h2>
+                    <a class="more" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer2">
+        <div class="container">
+            <div class="div2">
+                <div class="email">
+                    <h1 class="title">EMAIL SIGN UP</h1>
+                    <h2 class="desc">Be the first to know about new products and special offers.</h2>
+                    <a class="more" href="#">Sign up now</a>
+                </div>
+                <div class="gift">
+                    <h1 class="title">GIFT CARDS</h1>
+                    <h2 class="desc">Give the gift that always fits.</h2>
+                    <a class="more" href="#">View cards</a>
+                </div>
+                <div class="store">
+                    <h1 class="title">Stores near you</h1>
+                    <h2 class="desc">Locate a Nike retail or authorized retailer.</h2>
+                    <a class="more" href="#">Search</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--axios-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+    integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--js-->
+    <script type="module" src="./controllers/register.js"></script>
+</body>
+
+</html>

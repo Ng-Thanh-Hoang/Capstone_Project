@@ -1,0 +1,177 @@
+@import './variable/detail.scss';
+@import './base/detail.scss';
+
+//Header-on
+.header-on {
+    .container {
+        .logo {
+            padding:$ps 0;
+        }
+        .header-end {
+            img {
+                padding:8px 0;
+            }
+            a {
+                font-weight: $fw-300;
+                font-size: $px-1;
+                display: inline-block;
+                padding-top: 15px;
+                line-height: 19.36px;
+            }
+        }
+    }
+}
+
+//Header-under
+.header-under {
+    .container {
+        padding-top: $px-1;
+        a {
+            font-size: $px-3;
+            line-height: 24.2px;
+            margin-right:$px-10;
+        }
+    }
+}
+
+//Carousel
+.product{
+    .container{
+        .item-left{
+            padding: 58px 0 0 65px;
+            img{}
+        }
+        .item-right{
+            padding: 67px 0 0 127px;
+            h1{
+                @include mText($px-8,$fw-300,$cl-black);
+                display: inline;
+            }
+            p{
+                @include mText($px-1,$fw-400,$cl-black);
+                width: 503px;
+                height: 90px;
+            }
+            h3{
+                @include mText($px-5,$fw-500,$cl-green-100)
+            }
+            .size{
+                p{
+                    display: inline;
+                    padding:$p;
+                    margin-right:$me;
+                    background: $cl-gray;
+                    @include mText($px-5,$fw-600,black)
+                }
+            }
+            .price{
+                @include mText($px-8,$fw-600,$cl-red);
+                width:113px;
+                height: 47px;
+            }
+            .soLuong{
+                button{
+                    @include mText($px-8,$fw-400,$cl-white);
+                    background:$bg-linear1;
+                    padding: $p1;
+                }
+                .number{
+                    @include mText($px-8,$fw-400,$cl-black);
+                    padding-top: 5px;
+                    width: 14px;
+                    height: 36px;
+                    margin: 0 15px;
+                }
+            }
+            .button{
+                @include mButton($px-5,$fw-500,$cl-white,$bg-linear,10px 20px,none);
+            }
+        }
+    }
+}
+
+//Item
+.item{
+    background-color:#FFFCFC;
+    .container{
+        .row{
+            margin:80px 0  0 70px;
+            .col-4{
+                text-align: center;
+                width: 334px;
+                height: 369px;
+                .img{
+                    background-color:$cl-white-100;
+                    img{
+                        width: 220px;
+                    }
+                    .text{
+                        text-align: left;
+                        padding-left: 23px;
+                        h3{
+                            @include mText($px-5,$fw-300,$cl-black);
+                        }
+                        p{
+                            @include mText($px-3,$fw-300,$cl-white-200);
+                        }
+                    }
+                }
+                .price{
+                    .buy{
+                        width: 175px;
+                        height: 62px;
+                        @include mText($px-5,$fw-200,$cl-black);
+                        background:$cl-brown;
+                    }
+                    span{
+                        background: $cl-gray;
+                        @include mText($px-5,$fw-600,$cl-black);
+                        padding-top: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Footer
+.footer,.footer-end{
+    background-color: #fafafa;
+    .container{
+        .container-on{
+            padding: 30px 150px;
+            .item{
+                width:300px;
+                border-right:1px solid rgb(128, 128, 128,0.1);
+                background-color: #fafafa;
+                height: 90%;
+               h1{
+                @include mText($px-1,$fw-700,$cl-black);
+               }
+               .menu{
+                p{
+                    @include mText(10px,$fw-400,$cl-black);
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    @include mText(10px,$fw-400,$cl-black);
+                }
+               } 
+            }
+        }
+    }
+}
+
+.footer-end{
+    background-color: #ececec;
+    .container{
+        .container-on{
+            .item{
+                background-color: #ececec;
+            }
+        }
+    }
+}
+
+//Dev-Minh

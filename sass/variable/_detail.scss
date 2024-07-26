@@ -41,6 +41,11 @@ $cl-red:#FC0303;
 $cl-gray:#cccccc;
 $cl-green-100:#1ED90E;
 $cl-white:white;
+$cl-white-100:#f8f8f8;
+$cl-gray:#dedddc;
+$cl-brown:#e1b067;
+$cl-white-200:#CBC9C9;
+$pink-100:#d7726d;
 
 //background
 $bg-linear:linear-gradient(90deg, rgba(208,23,238,1) 25%, rgba(62,32,248,1) 100%);
@@ -58,3 +63,5 @@ $bg-linear1: linear-gradient(90deg, rgba(97,129,243,1) 100%, rgba(124,151,245,1)
     padding:$p;
     border:$b;
 }
+
+

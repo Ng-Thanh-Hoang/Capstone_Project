@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.width {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1256px;
+  margin: auto;
+}
+
+.active {
+  color: black;
+  position: relative;
+  font-weight: 400;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 55px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-on .container .logo {
+  padding: 10px 0;
+}
+.header-on .container .header-end img {
+  padding: 8px 0;
+}
+.header-on .container .header-end a {
+  font-weight: 300;
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 15px;
+  line-height: 19.36px;
+}
+
+.header-under .container {
+  padding-top: 16px;
+}
+.header-under .container a {
+  font-size: 20px;
+  line-height: 24.2px;
+  margin-right: 34px;
+}
+
+.product .container .item-left {
+  padding: 58px 0 0 65px;
+}
+.product .container .item-right {
+  padding: 67px 0 0 127px;
+}
+.product .container .item-right h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+  display: inline;
+}
+.product .container .item-right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  width: 503px;
+  height: 90px;
+}
+.product .container .item-right h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ED90E;
+}
+.product .container .item-right .size p {
+  display: inline;
+  padding: 10px 10px;
+  margin-right: 15px;
+  background: #dedddc;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+.product .container .item-right .price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #FC0303;
+  width: 113px;
+  height: 47px;
+}
+.product .container .item-right .soLuong button {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(90deg, rgb(97, 129, 243) 100%, rgb(124, 151, 245) 100%);
+  padding: 0px 15px;
+}
+.product .container .item-right .soLuong .number {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  padding-top: 5px;
+  width: 14px;
+  height: 36px;
+  margin: 0 15px;
+}
+.product .container .item-right .button {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, rgb(208, 23, 238) 25%, rgb(62, 32, 248) 100%);
+  padding: 10px 20px;
+  border: none;
+}
+
+.item {
+  background-color: #FFFCFC;
+}
+.item .container .row {
+  margin: 80px 0 0 70px;
+}
+.item .container .row .col-4 {
+  text-align: center;
+  width: 334px;
+  height: 369px;
+}
+.item .container .row .col-4 .img {
+  background-color: #f8f8f8;
+}
+.item .container .row .col-4 .img img {
+  width: 220px;
+}
+.item .container .row .col-4 .img .text {
+  text-align: left;
+  padding-left: 23px;
+}
+.item .container .row .col-4 .img .text h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+}
+.item .container .row .col-4 .img .text p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+}
+.item .container .row .col-4 .price .buy {
+  width: 175px;
+  height: 62px;
+  font-size: 24px;
+  font-weight: 200;
+  color: black;
+  background: #e1b067;
+}
+.item .container .row .col-4 .price span {
+  background: #dedddc;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  padding-top: 14px;
+}
+
+.footer, .footer-end {
+  background-color: #fafafa;
+}
+.footer .container .container-on, .footer-end .container .container-on {
+  padding: 30px 150px;
+}
+.footer .container .container-on .item, .footer-end .container .container-on .item {
+  width: 300px;
+  border-right: 1px solid rgba(128, 128, 128, 0.1);
+  background-color: #fafafa;
+  height: 90%;
+}
+.footer .container .container-on .item h1, .footer-end .container .container-on .item h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+.footer .container .container-on .item .menu p, .footer-end .container .container-on .item .menu p {
+  font-size: 10px;
+  font-weight: 400;
+  color: black;
+}
+.footer .container .container-on .item .menu a, .footer-end .container .container-on .item .menu a {
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 400;
+  color: black;
+}
+
+.footer-end {
+  background-color: #ececec;
+}
+.footer-end .container .container-on .item {
+  background-color: #ececec;
+}/*# sourceMappingURL=detail.css.map */

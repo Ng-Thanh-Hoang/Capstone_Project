@@ -1,0 +1,53 @@
+.register .container .title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+  }
+  .register .container .row .col {
+    padding: 0.5rem 4rem;
+  }
+  .register .container .row .col .form-control {
+    margin: 1.25rem;
+    border: none;
+    border-radius: 0;
+    border-bottom: 5px solid rgb(174, 24, 226) !important;
+  }
+  .register .container .row .col .form-control::placeholder {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .register .container .row .col .gender {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.75rem;
+  }
+  .register .container .row .col .gender .title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .register .container .row .col .gender .form-check-input {
+    padding: 0.75rem;
+    margin: 0 1rem;
+  }
+  .register .container .row .col .gender .form-check-input:checked {
+    background-color: #AE18E2;
+    border: none;
+  }
+  .register .container .sub {
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #AE18E2;
+    padding: 12px 120px;
+    border: none;
+    border-radius: none;
+    transition: all 0.5s;
+  }
+  .register .container .sub:hover {
+    color: none;
+    background: #E1B067;
+  }

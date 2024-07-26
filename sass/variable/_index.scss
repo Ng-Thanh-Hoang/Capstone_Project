@@ -1,0 +1,90 @@
+//Màu sắc của web
+$dark: #000000;
+$white: #FFFFFF;
+$grey-50:#F8F8F8;
+$grey-100: #CBC9C9;
+$grey-200:#DEDDDC;
+$yellow-100: #F8B653;
+$yellow-200: #E1B067;
+$red: #eb3232;
+$pink: #AE18E2;
+//màu background
+$bg-yellow-100: $yellow-100;
+$bg-yellow-200: $yellow-200;
+$bg-dark: $dark;
+$bg-grey-100: $grey-100;
+$bg-grey-200: $grey-200;
+$bg-grey-50: $grey-50;  
+$bg-pink: $pink;
+
+//màu chữ
+$text-dark: $dark;
+$text-white: $white;
+$text-grey: $grey-100;
+$text-more: $red;
+//sizing (font size)
+$text-16: 16px;
+$text-24: 24px;
+$text-20: 20px;
+$text-30: 30px;
+$text-40: 40px;
+
+//font-weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-semi: 600;
+$fw-bold: 700;
+
+//line-height
+$lh-sm: 24.2px;
+$lh-lg: 48.41px;
+
+
+
+//margin-padding
+$m-0: 0;
+$m-1: 0.25rem;
+$m-2: 0.5rem;
+$m-3: 0.75rem;
+$m-4: 1rem;
+$m-5: 1.25rem;
+$m-6: 1.5rem;
+$m-7: 1.75rem;
+$m-8: 2rem;
+$m-9: 2.25rem;
+$m-10: 3rem;
+
+$p-0: 0;
+$p-1: 0.25rem;
+$p-2: 0.5rem;
+$p-3: 0.75rem;
+$p-4: 1rem;
+$p-5: 1.25rem;
+$p-6: 1.5rem;
+$p-7: 1.75rem;
+$p-8: 2rem;
+$p-9: 2.25rem;
+$p-10: 3rem;
+$p-regis: 4rem;
+
+
+//mixin
+@mixin mText($fz, $fw, $cl) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $cl;
+}
+
+@mixin mButton($fz, $fw, $cl, $bg, $p, $bd, $br, $bg-hover, $cl-hover) {
+    @include mText($fz, $fw, $cl);
+    background: $bg;
+    padding: $p;
+    border: $bd;
+    border-radius: $br;
+    transition: all 0.5s;
+
+    &:hover {
+        color: $cl-hover;
+        background: $bg-hover;
+    }
+}

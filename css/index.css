@@ -2,112 +2,293 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
 
-.active {
-  color: black;
-  position: relative;
-  font-weight: 400;
-}
-.active::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 25px;
-  width: 55px;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.header-on .header-container {
-  max-width: 1830px;
+.container {
+  max-width: 1440px;
   margin: 0 auto;
 }
-.header-on .header-container .logo {
-  padding: 10px 0;
-}
-.header-on .header-container .header-end img {
-  padding: 8px 0;
-}
-.header-on .header-container .header-end a {
-  font-weight: 300;
-  font-size: 16px;
-  display: inline-block;
-  padding-top: 15px;
-  line-height: 19.36px;
-}
 
-.header-under .header-container {
-  padding-top: 16px;
+.header {
+  background: #000000;
 }
-.header-under .header-container a {
-  padding-left: 25px;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+.header .container .login a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.nav {
+  height: 50px;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+}
+.nav .container a {
+  text-decoration: none;
+  margin: 0 0.5rem;
   font-size: 20px;
-  line-height: 24.2px;
+  font-weight: 300;
+  color: #000000;
 }
 
-.product .product-container .item-left {
-  padding: 58px 0 0 65px;
+.carousel {
+  background: url(/assets/img/image\ 6.png);
+  background-size: cover;
+  background-position: bottom right;
 }
-.product .product-container .item-right {
-  padding: 67px 0 0 127px;
+.carousel .container {
+  display: flex;
+  height: 530px;
+  align-items: center;
 }
-.product .product-container .item-right h1 {
-  font-size: 30px;
+.carousel .container .thumb-nail img {
+  width: 100%;
+}
+.carousel .container .product-info .product-title {
+  font-size: 40px;
   font-weight: 300;
-  color: black;
-  display: inline;
+  color: #000000;
 }
-.product .product-container .item-right p {
-  font-size: 16px;
-  font-weight: 400;
-  color: black;
-  width: 503px;
-  height: 90px;
+.carousel .container .product-info .product-desc {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 30px;
 }
-.product .product-container .item-right h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #1ED90E;
-}
-.product .product-container .item-right .size p {
-  display: inline;
-  padding: 10px 10px;
-  margin-right: 15px;
-  background: #cccccc;
-  font-size: 24px;
-  font-weight: 600;
-  color: black;
-}
-.product .product-container .item-right .price {
-  font-size: 30px;
-  font-weight: 600;
-  color: #FC0303;
-  width: 113px;
-  height: 47px;
-}
-.product .product-container .item-right .soLuong button {
-  font-size: 30px;
-  font-weight: 400;
-  color: white;
-  background: linear-gradient(90deg, rgb(97, 129, 243) 100%, rgb(124, 151, 245) 100%);
-  padding: 0px 15px;
-}
-.product .product-container .item-right .soLuong .number {
-  font-size: 30px;
-  font-weight: 400;
-  color: black;
-  padding-top: 5px;
-  width: 14px;
-  height: 36px;
-  margin: 0 15px;
-}
-.product .product-container .item-right .button {
-  font-size: 24px;
-  font-weight: 500;
-  color: white;
-  background: linear-gradient(90deg, rgb(208, 23, 238) 25%, rgb(62, 32, 248) 100%);
-  padding: 10px 20px;
+.carousel .container .product-info .btn-buy {
+  font-size: 20px;
+  font-weight: 300;
+  color: #FFFFFF;
+  background: #F8B653;
+  padding: 12px 40px;
   border: none;
+  border-radius: none;
+  transition: all 0.5s;
+  text-align: center;
+}
+.carousel .container .product-info .btn-buy:hover {
+  color: none;
+  background: #E1B067;
+}
+.carousel .container .carousel-control-prev .carousel-control-prev-icon {
+  height: 3rem;
+  width: 3rem;
+}
+.carousel .container .carousel-control-next .carousel-control-prev-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.carousel .container .carousel-control-next .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.product {
+  height: 1440px;
+  margin: 2.25rem auto;
+}
+.product .container {
+  height: 100%;
+}
+.product .container .product-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin: 3rem auto;
+}
+.product .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 369px;
+}
+.product .container .row .col {
+  flex: auto;
+  width: 33.3333333333%;
+  padding: 3rem 2.25rem;
+}
+.product .container .row .col .card {
+  background: #F8F8F8;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.product .container .row .col .card img {
+  padding: 20px 30px;
+}
+.product .container .row .col .card .card-body {
+  padding: 0;
+}
+.product .container .row .col .card .card-body .name-price .name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0 1.5rem;
+  text-align: left;
+}
+.product .container .row .col .card .card-body .name-price .desc {
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.product .container .row .col .card .card-body .name-price .buy-money {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+.product .container .row .col .card .card-body .name-price .buy-money .buy-now {
+  text-decoration: none;
+  width: 60%;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  background-color: #E1B067;
+  border: none;
+  text-align: center;
+  padding: 0.75rem 0;
+}
+.product .container .row .col .card .card-body .name-price .buy-money .money {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background: #DEDDDC;
+}
+
+.footer1 {
+  margin: 100px 0 0 0;
+  background-color: #FAFAFA;
+}
+.footer1 .container .div1 {
+  display: flex;
+  height: auto;
+  padding: 50px 100px;
+}
+.footer1 .container .div1 .help {
+  width: 33.3333333333%;
+}
+.footer1 .container .div1 .help .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer1 .container .div1 .help a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer1 .container .div1 .oders {
+  width: 33.3333333333%;
+}
+.footer1 .container .div1 .oders .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer1 .container .div1 .oders a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer1 .container .div1 .register {
+  width: 33.3333333333%;
+}
+.footer1 .container .div1 .register .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer1 .container .div1 .register .desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer1 .container .div1 .register .more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eb3232;
+}
+
+.footer2 {
+  background-color: #ECECEC;
+}
+.footer2 .container .div2 {
+  display: flex;
+  padding: 50px 100px;
+}
+.footer2 .container .div2 .email {
+  width: 33.3333333333%;
+}
+.footer2 .container .div2 .email .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer2 .container .div2 .email .desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer2 .container .div2 .email .more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eb3232;
+}
+.footer2 .container .div2 .gift {
+  width: 33.3333333333%;
+}
+.footer2 .container .div2 .gift .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer2 .container .div2 .gift .desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer2 .container .div2 .gift .more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eb3232;
+}
+.footer2 .container .div2 .store {
+  width: 33.3333333333%;
+}
+.footer2 .container .div2 .store .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer2 .container .div2 .store .desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer2 .container .div2 .store .more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eb3232;
 }/*# sourceMappingURL=index.css.map */
