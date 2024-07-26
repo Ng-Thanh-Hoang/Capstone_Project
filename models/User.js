@@ -1,7 +1,7 @@
-export class User{
-    email='';
-    name='';
-    password='';
-    phone='';
-    gender='';
+export class User {
+    email = '';
+    name = '';
+    password = '';
+    phone = '';
+    gender = true;
 }

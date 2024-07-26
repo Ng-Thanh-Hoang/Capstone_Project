@@ -17,7 +17,6 @@ async function getDataIndexApi() {
 
 window.renderProduct = function (arr) {
     let htmlString = '';
-    //for (let product of arr) {
     for (let i = 0; i < 6 && i < arr.length; i++) {
         let product = arr[i];
         console.log(product);
@@ -30,7 +29,7 @@ window.renderProduct = function (arr) {
                                 <h1 class="name">${product.name}</h1>
                                 <h2 class="desc">${product.shortDescription}</h2>
                                 <div class="buy-money">
-                                    <a href="./detail.html?productid=${product.id}" class="buy-now" onclick="buyNow('${product.id}')">
+                                    <a href="./detail.html?productid=${product.id}" class="buy-now">
                                         Buy now
                                     </a>
                                     <div class="money">${product.price}$</div>
@@ -47,14 +46,4 @@ window.renderProduct = function (arr) {
 
 window.onload = function (e) {
     getDataIndexApi();
-}
-
-window.buyNow = async function (id) {
-    let url = `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id}`;
-    let res = await axios({
-        url: url,
-        method: 'GET',
-        responseType: 'json'
-    });
-    console.log(res.data);
 }
