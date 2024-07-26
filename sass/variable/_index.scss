@@ -75,16 +75,10 @@ $p-regis: 4rem;
     color: $cl;
 }
 
-@mixin mButton($fz, $fw, $cl, $bg, $p, $bd, $br, $bg-hover, $cl-hover) {
+@mixin mButton($fz, $fw, $cl, $bg, $p, $bd, $br) {
     @include mText($fz, $fw, $cl);
     background: $bg;
     padding: $p;
     border: $bd;
     border-radius: $br;
-    transition: all 0.5s;
-
-    &:hover {
-        color: $cl-hover;
-        background: $bg-hover;
-    }
 }

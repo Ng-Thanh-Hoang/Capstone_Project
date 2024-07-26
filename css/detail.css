@@ -200,4 +200,13 @@
 }
 .footer-end .container .container-on .item {
   background-color: #ececec;
+}
+.footer-end .container .icon {
+  position: relative;
+}
+.footer-end .container .icon .fa {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: gray;
 }/*# sourceMappingURL=detail.css.map */

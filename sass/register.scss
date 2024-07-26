@@ -1,0 +1,53 @@
+@import './variable/index.scss';
+.register {
+    .container {
+        .title {
+            @include mText($text-40, $fw-normal, $text-dark);
+            text-align: center;
+        }
+
+        .row {
+            .col {
+                padding: $p-2 $p-regis;
+
+                .form-control {
+                    margin: $m-5;
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: 5px solid rgb(174, 24, 266,1) !important;
+
+                    &::placeholder {
+                        @include mText($text-30, $fw-normal, $text-dark);
+                    }
+
+
+                }
+
+                .gender {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    padding: $p-0 $p-7;
+                    .title{
+                        @include mText($text-30, $fw-normal, $text-dark);
+
+                    }
+                    .form-check-input{
+                        padding: $p-3;
+                        margin: 0 $p-4;
+                        &:checked{
+                            background-color: $bg-pink;
+                            border: none;
+                        } 
+                    }
+
+    
+                }
+
+            }
+        }
+        .sub {
+            @include mButton($text-30, $fw-normal, $text-white, $bg-pink, 12px 120px, none, none);
+        }
+    }
+}

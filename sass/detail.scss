@@ -171,6 +171,15 @@
                 background-color: #ececec;
             }
         }
+        .icon{
+            position: relative;
+            .fa{
+                position: absolute;
+                top:0px;
+                right:20px;
+                color: gray;
+            }
+        }
     }
 }
 
